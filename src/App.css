@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+.friends-loading {
+  animation: friends-loading-spin infinite 1s linear;
+  height: 80px;
+}
+
+.App-header {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.App-header_logout {
+  cursor: pointer;
+  background: #ff00bc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.Aht_cur-user-name {
+  margin-left: 5px;
+  color: #6060f9;
+  text-decoration: none;
+}
+.Aht_cur-user-name > span {
+  margin-left: 5px;
+}
+.friends-list {
+  max-width: 100%;
+  margin-top: 10px;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.friends-list_item-link {
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+.friends-list_item-link:hover{
+  background: gray;
+}
+.friends-list_item-link > span {
+  margin-right: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.flil_friend-cell {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+.friends-list_item-link > img {
+  justify-self: self-end;
+}
+.Aht_you {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1025px) {
+  .App-header {
+    max-height: 200px;
+    min-height: initial;
+  }
+  .friends-list {
+    max-width: 50%;
+  }
+}
+
+@keyframes friends-loading-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
