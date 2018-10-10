@@ -1,6 +1,6 @@
 deployed to github pages with gh-pages
 
-navigate to `https://againksy.github.io/auth_friend5s_vk/`
+navigate to [https://againksy.github.io/auth_friend5s_vk/](https://againksy.github.io/auth_friend5s_vk/) 
 
 for local start:  `sudo PORT=80 node_modules/react-scripts/bin/react-scripts.js start`
 
